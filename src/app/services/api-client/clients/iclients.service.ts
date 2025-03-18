@@ -1,7 +1,7 @@
-import { Observable } from "rxjs";
+import {Observable } from "rxjs";
 import { DetailClientResponse, ListClientResponse, SaveClientRequest, SaveClientResponse, UpdateClientRequest, UpdateClientResponse } from "./client.models";
 
-export interface IClientService {
+export interface ICLientService {
 
     save(request: SaveClientRequest): Observable<SaveClientResponse>
 
@@ -12,5 +12,4 @@ export interface IClientService {
     list(): Observable<ListClientResponse[]>
 
     findById(id: number): Observable<DetailClientResponse>
-
 }
