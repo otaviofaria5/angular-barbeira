@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { SERVICES_TOKEN } from '../../services/service.token';
-import { ICLientService } from '../../services/api-client/clients/iclients.service';
+import { IClientService } from '../../services/api-client/clients/iclients.service';
 import { ClientsService } from '../../services/api-client/clients/clients.service';
 
 @Component({
@@ -14,5 +14,5 @@ import { ClientsService } from '../../services/api-client/clients/clients.servic
 })
 export class ListClientsComponent {
 
-  constructor(@Inject(SERVICES_TOKEN.HTTP.CLIENT) private readonly httpService: ICLientService) { }
+  constructor(@Inject(SERVICES_TOKEN.HTTP.CLIENT) private readonly httpService: IClientService) { }
 }
